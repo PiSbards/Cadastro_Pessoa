@@ -50,6 +50,7 @@
             this.dgvPessoa.Name = "dgvPessoa";
             this.dgvPessoa.Size = new System.Drawing.Size(431, 234);
             this.dgvPessoa.TabIndex = 0;
+            this.dgvPessoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPessoa_CellClick);
             // 
             // btCadastrar
             // 
@@ -64,6 +65,7 @@
             this.btCadastrar.TabIndex = 1;
             this.btCadastrar.Text = "CADASTRAR";
             this.btCadastrar.UseVisualStyleBackColor = false;
+            this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // label1
             // 
@@ -95,6 +97,7 @@
             this.btEditar.TabIndex = 4;
             this.btEditar.Text = "EDITAR";
             this.btEditar.UseVisualStyleBackColor = false;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // btExcluir
             // 
@@ -109,6 +112,7 @@
             this.btExcluir.TabIndex = 5;
             this.btExcluir.Text = "EXCLUIR";
             this.btExcluir.UseVisualStyleBackColor = false;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btSair
             // 
@@ -138,6 +142,7 @@
             this.btLocalizar.TabIndex = 7;
             this.btLocalizar.Text = "LOCALIZAR";
             this.btLocalizar.UseVisualStyleBackColor = false;
+            this.btLocalizar.Click += new System.EventHandler(this.btLocalizar_Click);
             // 
             // txtNome
             // 

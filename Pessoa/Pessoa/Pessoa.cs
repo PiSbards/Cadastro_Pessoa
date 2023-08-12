@@ -71,7 +71,7 @@ namespace Pessoa
 
         public void Atualizar(int Id, string nome, string celular)
         {
-            string sql="UPADTE Pessoa SET nome = '"+nome+"', celular= '"+celular+"' WHERE Id='"+Id+"'";
+            string sql="UPDATE Pessoa SET nome='"+nome+"',celular='"+celular+"' WHERE Id='"+Id+"'";
             if (con.State == ConnectionState.Open)
             {
                 con.Close();
@@ -84,7 +84,7 @@ namespace Pessoa
 
         public void Excluir(int Id)
         {
-            string sql = "DELETE FROM Pessoa WHERE Id = '"+Id+"'";
+            string sql = "DELETE FROM Pessoa WHERE Id= '"+Id+"'";
             if (con.State == ConnectionState.Open)
             {
                 con.Close();
